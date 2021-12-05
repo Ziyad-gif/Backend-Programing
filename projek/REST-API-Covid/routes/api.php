@@ -39,7 +39,7 @@ Route::delete('/pasien/{id}', [PasienController::class, 'destroy']);
 Route::get('/pasien/search/{name}', [PasienController::class, 'search']);
 
 # Method (GET) Positive Resource
-Route::get('/pasien/status/positive', [PasienController::class, 'positive']);
+Route::get('/pasien/status/treatment', [PasienController::class, 'treatment']);
 
 # Method (GET) Recovered Resource
 Route::get('/pasien/status/recovered', [PasienController::class, 'recovered']);

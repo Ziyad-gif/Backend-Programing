@@ -210,9 +210,9 @@ class PasienController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function positive()
+    public function treatment()
     {
-        return $this->searchByStatus('positive');
+        return $this->searchByStatus('treatment');
     }
 
     /**
