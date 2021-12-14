@@ -2,9 +2,9 @@
  * Fungsi untuk menampilkan hasil download
  * @param {string} result - Nama file yang didownload
  */
-  const showDownload = (result) => {
-    let ket1 = 'Download selesai';
-    let ket2 = 'Hasil Download : ' + result;
+  const showDownload = ($result) => {
+    console.log("Download selesai");
+      console.log("Hasil download" + $result)
   };
   /**
    * Fungsi untuk download file
@@ -20,10 +20,8 @@
   };
   
   async function main () {
-    const $result = await download();
-    showDownload ($result);
-      console.log("Download selesai");
-      console.log("Hasil download" + $result)
+    const hasil = await download();
+    showDownload (hasil);
   };
   main();
   
