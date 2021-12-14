@@ -2,9 +2,9 @@
  * Fungsi untuk menampilkan hasil download
  * @param {string} result - Nama file yang didownload
  */
-  const showDownload = ($result) => {
+  const showDownload = (result) => {
     console.log("Download selesai");
-      console.log("Hasil download" + $result)
+      console.log("Hasil download" + result)
   };
   /**
    * Fungsi untuk download file
